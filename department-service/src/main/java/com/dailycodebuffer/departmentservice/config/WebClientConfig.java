@@ -16,7 +16,6 @@ public class WebClientConfig {
     private LoadBalancedExchangeFilterFunction filterFunction;
 
 
-    @Bean
     public WebClient employeeWebClient() {
         return WebClient.builder()
                 .baseUrl("http://employee-service")
